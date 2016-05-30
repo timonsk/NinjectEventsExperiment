@@ -1,5 +1,7 @@
 ﻿using System;
 using Ninject;
+using Ninject.Extensions.MessageBroker;
+
 
 namespace NinjectEventsExperiment
 {

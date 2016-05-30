@@ -34,6 +34,9 @@
     <Reference Include="Ninject">
       <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
+    <Reference Include="Ninject.Extensions.MessageBroker">
+      <HintPath>..\packages\Ninject.Extensions.MessageBroker.3.2.0.0\lib\net45-full\Ninject.Extensions.MessageBroker.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -41,12 +44,16 @@
     <Compile Include="Common\AppBootstrapper.cs" />
     <Compile Include="Module1\Module1.cs" />
     <Compile Include="Module2\Module2.cs" />
+    <Compile Include="Module2\People2.cs" />
+    <Compile Include="Module1\People1.cs" />
+    <Compile Include="Model\MessageEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Common\" />
     <Folder Include="Module1\" />
     <Folder Include="Module2\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

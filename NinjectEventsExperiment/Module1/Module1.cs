@@ -7,7 +7,7 @@ namespace NinjectEventsExperiment
 	{
 		public override void Load ()
 		{
-
+			Kernel.Bind<People1> ().ToSelf ().InSingletonScope ();
 		}
 	}
 }

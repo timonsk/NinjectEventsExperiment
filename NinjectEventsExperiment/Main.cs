@@ -6,8 +6,14 @@ namespace NinjectEventsExperiment
 	{
 		public static void Main (string[] args)
 		{
+			Console.WriteLine ("Initialize IoC");
 			var boot = new AppBootstrapper ();
-			Console.WriteLine ("Hello World!");
+			var p1 = boot.Resolve<People1>();
+			var p2 = boot.Resolve<People2>();
+			p1.SendMessage ("Hello from: p1");
+
+			Console.ReadKey ();
+
 		}
 	}
 }
